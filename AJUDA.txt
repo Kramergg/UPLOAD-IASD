@@ -13,6 +13,8 @@ ARQUIVOS .BAT:
 
 - "instalar_dependencias.bat": instala as depedencias necessárias para o app funcionar
 -"levar-para_area_de_trabalho.bat": pega os arquivos essenciais e coloca na área de trabalho do computador.
+- "START.bat":  começa o app da web (Aplicativo Padrão)
+- "START_WHATSAPP.bat": começa o Bot Whatsapp, (Funciona somente com o computador conectado a internet), depois de conectado envie um "!ajuda" mensagem para o numero conectado.
 
 SUGESTÃO: 
 
