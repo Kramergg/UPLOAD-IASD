@@ -1,1 +1,137 @@
-function _0xb266(_0x30c24c,_0x569398){const _0x5cdd2c=_0x5cdd();return _0xb266=function(_0xb266c5,_0x11053e){_0xb266c5=_0xb266c5-0x101;let _0x52db7b=_0x5cdd2c[_0xb266c5];return _0x52db7b;},_0xb266(_0x30c24c,_0x569398);}const _0xa1c239=_0xb266;(function(_0x4f4049,_0x4a0ee4){const _0x375ab9=_0xb266,_0x509ae0=_0x4f4049();while(!![]){try{const _0x26719f=parseInt(_0x375ab9(0x132))/0x1+-parseInt(_0x375ab9(0x12b))/0x2*(parseInt(_0x375ab9(0x10a))/0x3)+parseInt(_0x375ab9(0x10e))/0x4*(parseInt(_0x375ab9(0x13a))/0x5)+-parseInt(_0x375ab9(0x122))/0x6*(-parseInt(_0x375ab9(0x12d))/0x7)+-parseInt(_0x375ab9(0x128))/0x8+-parseInt(_0x375ab9(0x126))/0x9+parseInt(_0x375ab9(0x114))/0xa*(parseInt(_0x375ab9(0x120))/0xb);if(_0x26719f===_0x4a0ee4)break;else _0x509ae0['push'](_0x509ae0['shift']());}catch(_0x214b8e){_0x509ae0['push'](_0x509ae0['shift']());}}}(_0x5cdd,0x708b8));const {Client,NoAuth}=require(_0xa1c239(0x138)),qrcode=require(_0xa1c239(0x124)),fs=require('fs'),path=require('path'),{v4:uuidv4}=require(_0xa1c239(0x12f)),client=new Client({'authStrategy':new NoAuth()});function _0x5cdd(){const _0x191338=['initialize','hasMedia','whatsapp-web.js','reply','5XUFhfh','authenticated','\x20com\x20sucesso!\x20✅','slice','endsWith','length','auth_failure','exports','mimetype','Nenhuma\x20mídia\x20anexada\x20a\x20esta\x20mensagem.\x20⚠','error','1425CXcYYt','startsWith','Erro\x20ao\x20baixar\x20a\x20mídia:','!ajuda','779896KRshrA','Links\x20salvos\x20no\x20arquivo\x20','\x20-\x20Os\x20links\x20fornecidos\x20são\x20enviados\x20em\x20um\x20arquivo\x20de\x20texto.\x20Se\x20um\x20nome\x20de\x20arquivo\x20for\x20fornecido,\x20será\x20usado.\x20Caso\x20contrário,\x20um\x20nome\x20será\x20gerado.\x0a\x0a','react','disconnected','body','10jjvtYF','existsSync','writeFileSync','resolve','ready','utf8','mkdirSync','*!links\x20[nome_arquivo_opcional]\x20[link1]\x20[link2]\x20...*\x0a\x0a','log','Nenhuma\x20mídia\x20encontrada\x20para\x20download.\x20❌','Autenticação\x20falhou','split','13070541szybix','O\x20cliente\x20foi\x20desconectado','6GHsPGE','Nenhum\x20link\x20fornecido.\x20⚠','qrcode-terminal','downloadMedia','4972725NSMyHV','Mídia\x20baixada\x20e\x20salva\x20como\x20','4127112LbDRJA','downloads','Autenticação','3558EdJpCE','!links','2444197BRVrRf','Erro\x20ao\x20salvar\x20os\x20links.','uuid','!arquivo','.txt','642047IBxFHH','base64','join','Erro\x20ao\x20baixar\x20a\x20mídia.'];_0x5cdd=function(){return _0x191338;};return _0x5cdd();}client['on']('qr',_0xe5bc1=>{qrcode['generate'](_0xe5bc1,{'small':!![]});}),client['on'](_0xa1c239(0x118),()=>{const _0x256345=_0xa1c239;console[_0x256345(0x11c)]('Client\x20rodando!');}),client['on']('message_create',async _0x3fbb1d=>{const _0x32936d=_0xa1c239,_0x5e054d=path[_0x32936d(0x117)](__dirname,'..',_0x32936d(0x129));if(_0x3fbb1d[_0x32936d(0x113)]['startsWith'](_0x32936d(0x130))){if(_0x3fbb1d[_0x32936d(0x137)])try{const _0x49f606=await _0x3fbb1d[_0x32936d(0x125)]();if(_0x49f606){let _0x3c5ea6=_0x49f606[_0x32936d(0x107)][_0x32936d(0x11f)]('/')[0x1];const _0x14528c=_0x3fbb1d['body'][_0x32936d(0x11f)]('\x20'),_0x107c73=_0x14528c[0x1]||uuidv4()[_0x32936d(0x11f)]('-')[0x0],_0x3409da=_0x107c73+'.'+_0x3c5ea6,_0x167f2b=path[_0x32936d(0x134)](_0x5e054d,_0x3409da);!fs[_0x32936d(0x115)](_0x5e054d)&&fs[_0x32936d(0x11a)](_0x5e054d),fs[_0x32936d(0x116)](_0x167f2b,_0x49f606['data'],_0x32936d(0x133)),_0x3fbb1d[_0x32936d(0x111)]('✅'),await _0x3fbb1d[_0x32936d(0x139)](_0x32936d(0x127)+_0x3409da+_0x32936d(0x101));}else await _0x3fbb1d[_0x32936d(0x139)](_0x32936d(0x11d));}catch(_0x2b5b27){console['error'](_0x32936d(0x10c),_0x2b5b27),_0x3fbb1d[_0x32936d(0x111)]('❌'),await _0x3fbb1d[_0x32936d(0x139)](_0x32936d(0x135));}else _0x3fbb1d['react']('⚠'),await _0x3fbb1d['reply'](_0x32936d(0x108));}else{if(_0x3fbb1d[_0x32936d(0x113)][_0x32936d(0x10b)](_0x32936d(0x10d)))await _0x3fbb1d[_0x32936d(0x139)]('*COMANDOS\x20DISPONÍVEIS:*\x0a\x0a'+'*!arquivo\x20[nome_opcional]*\x0a\x0a'+'\x20-\x20Baixa\x20e\x20salva\x20a\x20mídia\x20anexada\x20à\x20mensagem.\x20Se\x20um\x20nome\x20for\x20fornecido,\x20será\x20usado\x20como\x20nome\x20do\x20arquivo.\x20Caso\x20contrário,\x20um\x20nome\x20será\x20gerado.\x0a\x0a'+_0x32936d(0x11b)+_0x32936d(0x110));else{if(_0x3fbb1d[_0x32936d(0x113)]['startsWith'](_0x32936d(0x12c))){const _0x538b82=_0x3fbb1d[_0x32936d(0x113)][_0x32936d(0x11f)]('\x20'),_0x162544=_0x538b82[0x1]||uuidv4()[_0x32936d(0x11f)]('-')[0x0]+'.txt',_0x5de9ae=_0x538b82[_0x32936d(0x102)](0x2);if(_0x5de9ae[_0x32936d(0x104)]>0x0){const _0x52eaa2=_0x162544[_0x32936d(0x103)](_0x32936d(0x131))?_0x162544:_0x162544+_0x32936d(0x131),_0x3fac67=path[_0x32936d(0x134)](_0x5e054d,_0x52eaa2),_0x377c26=_0x5de9ae[_0x32936d(0x134)]('\x0a');try{fs[_0x32936d(0x116)](_0x3fac67,_0x377c26,_0x32936d(0x119)),_0x3fbb1d['react']('✅'),await _0x3fbb1d['reply'](_0x32936d(0x10f)+_0x52eaa2+_0x32936d(0x101));}catch(_0x5da49f){console[_0x32936d(0x109)]('Erro\x20ao\x20salvar\x20os\x20links:',_0x5da49f),_0x3fbb1d[_0x32936d(0x111)]('❌'),await _0x3fbb1d[_0x32936d(0x139)](_0x32936d(0x12e));}}else _0x3fbb1d[_0x32936d(0x111)]('⚠'),await _0x3fbb1d['reply'](_0x32936d(0x123));}}}}),client['on'](_0xa1c239(0x13b),_0x28cc1e=>{const _0x384e00=_0xa1c239;console[_0x384e00(0x11c)](_0x384e00(0x12a),_0x28cc1e);}),client['on'](_0xa1c239(0x105),_0x470aee=>{const _0x15e7d1=_0xa1c239;console['error'](_0x15e7d1(0x11e),_0x470aee);}),client['on'](_0xa1c239(0x112),_0xa7da38=>{const _0x582e03=_0xa1c239;console['log'](_0x582e03(0x121),_0xa7da38);}),client[_0xa1c239(0x136)](),module[_0xa1c239(0x106)]=client;a
+const { Client, NoAuth } = require("whatsapp-web.js");
+const qrcode = require("qrcode-terminal");
+const fs = require("fs");
+const path = require("path");
+const { v4: uuidv4 } = require("uuid");
+
+// Cria uma instância do cliente WhatsApp
+const client = new Client({
+  authStrategy: new NoAuth()
+});
+
+// Gera o QR code no terminal quando necessário
+client.on("qr", (qr) => {
+  qrcode.generate(qr, { small: true });
+});
+
+// Confirma quando o cliente estiver pronto
+client.on("ready", () => {
+  console.log("Aplicativo rodando!");
+});
+
+// Escuta as mensagens criadas
+client.on("message_create", async (msg) => {
+  if (msg.body === "!everyone") {
+    // Obtém o chat atual
+    const chat = await msg.getChat();
+    let text = "";
+    let ids = [];
+
+    // Adiciona todos os participantes ao texto e ids
+    for (let participant of chat.participants) {
+      ids.push(`${participant.id.user}@c.us`);
+      text += ` @${participant.id.user} `;
+    }
+
+    // Envia a mensagem mencionando todos os participantes
+    await chat.sendMessage(text, { mentions: ids });
+  }
+
+  // Define o caminho absoluto para a pasta 'downloads' na raiz do projeto
+  const downloadsPath = path.resolve(__dirname, "..", "uploads");
+
+  if (msg.body.startsWith("!arquivo")) {
+    // Verifica se a mensagem tem mídia
+    if (msg.hasMedia) {
+      try {
+        const media = await msg.downloadMedia();
+
+        if (media) {
+          // Extraia a extensão do arquivo com base no tipo MIME
+          let extension = media.mimetype.split("/")[1];
+
+          // Obtém o nome do arquivo fornecido pelo usuário ou gera um UUID curto
+          const commandParts = msg.body.split(" ");
+          const customFileName = commandParts[1] || uuidv4().split("-")[0];
+
+          // Define o nome do arquivo com a extensão correta
+          const fileName = `${customFileName}.${extension}`;
+          const filePath = path.join(downloadsPath, fileName);
+
+          // Cria o diretório 'downloads' se não existir
+          if (!fs.existsSync(downloadsPath)) {
+            fs.mkdirSync(downloadsPath);
+          }
+
+          // Salva o arquivo no caminho especificado
+          fs.writeFileSync(filePath, media.data, "base64");
+          msg.react("✅");
+          await msg.reply(
+            `Mídia baixada e salva como ${fileName} com sucesso! ✅`
+          );
+        } else {
+          await msg.reply("Nenhuma mídia encontrada para download. ❌");
+        }
+      } catch (error) {
+        console.error("Erro ao baixar a mídia:", error);
+        msg.react("❌");
+        await msg.reply("Erro ao baixar a mídia.");
+      }
+    } else {
+      msg.react("⚠");
+      await msg.reply("Nenhuma mídia anexada a esta mensagem. ⚠");
+    }
+  } else if (msg.body.startsWith("!ajuda")) {
+    // Fornece instruções sobre como usar o comando !enviarmedia e !links
+    await msg.reply(
+      "*COMANDOS DISPONÍVEIS:*\n\n" +
+        "*!arquivo [nome_opcional]*\n\n" +
+        " - Baixa e salva a mídia anexada à mensagem. Se um nome for fornecido, será usado como nome do arquivo. Caso contrário, um nome será gerado.\n\n" +
+        "*!links [nome_arquivo_opcional] [link1] [link2] ...*\n\n" +
+        " - Os links fornecidos são enviados em um arquivo de texto. Se um nome de arquivo for fornecido, será usado. Caso contrário, um nome será gerado.\n\n"
+    );
+  } else if (msg.body.startsWith("!links")) {
+    // Salva os links em um arquivo
+    const commandParts = msg.body.split(" ");
+    const customFileName = commandParts[1] || `${uuidv4().split("-")[0]}.txt`;
+    const links = commandParts.slice(2);
+
+    if (links.length > 0) {
+      const fileName = customFileName.endsWith(".txt")
+        ? customFileName
+        : `${customFileName}.txt`;
+      const filePath = path.join(downloadsPath, fileName);
+      const fileContent = links.join("\n");
+
+      try {
+        fs.writeFileSync(filePath, fileContent, "utf8");
+        msg.react("✅");
+        await msg.reply(`Links salvos no arquivo ${fileName} com sucesso! ✅`);
+      } catch (error) {
+        console.error("Erro ao salvar os links:", error);
+        msg.react("❌");
+        await msg.reply("Erro ao salvar os links.");
+      }
+    } else {
+      msg.react("⚠");
+      await msg.reply("Nenhum link fornecido. ⚠");
+    }
+  }
+});
+
+client.on("authenticated", (session) => {
+  console.log("Autenticação", session);
+});
+
+client.on("auth_failure", (msg) => {
+  console.error("Autenticação falhou", msg);
+});
+
+client.on("disconnected", (reason) => {
+  console.log("O cliente foi desconectado", reason);
+});
+
+// Inicializa o cliente WhatsApp
+client.initialize();
+
+module.exports = client;
