@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start:zap": "node controllers/whatsappController.js",
+    "start:zap": "node src/controllers/whatsappController.js",
     "start": "node server.js"
   },
   "dependencies": {
