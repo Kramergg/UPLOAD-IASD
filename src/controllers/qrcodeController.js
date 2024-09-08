@@ -28,7 +28,7 @@ const getLocalIP = () => {
 };
 
 const createQRCodePDF = async (url) => {
-  const pdfDir = path.join(__dirname, "../qrcode");
+  const pdfDir = path.join(__dirname, "../../qrcode");
   const pdfPath = path.join(pdfDir, "qrcode.pdf");
 
   if (!fs.existsSync(pdfDir)) {
